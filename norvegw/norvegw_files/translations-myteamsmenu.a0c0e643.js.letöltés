@@ -1,0 +1,1 @@
+window.leftMenuEnvironment = { trans: {"TRANS_MY_TEAMS_ADD_TEAM":"Csapat hozzáadása","TRANS_MY_TEAMS_LABEL":"Csapataim","TRANS_MY_TEAMS_REMOVE":"Eltávolítás a Csapataim közül!"} }
