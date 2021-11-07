@@ -235,7 +235,7 @@ def ou_analization(bet, matches, outfile, comp):
     #df_final['hodiff'] = mean(hodiff)
     print(df_final)
     df_final.to_excel(outfile, engine='xlsxwriter', index=False)
-    '''
+    
     today = date.today()
     d4 = today.strftime("%b-%d-%Y")
     path = "../elemzes/ou/" + d4 
@@ -256,7 +256,7 @@ def ou_analization(bet, matches, outfile, comp):
         with pd.ExcelWriter(path) as writer:  
             df_final.to_excel(writer, sheet_name='OU Analysis', index=False)
             #out_df.to_excel(writer, sheet_name='Thresholds', index=False)
-'''
+
     '''path = "../gyujto/" + outfile
     df_final.to_excel(path, engine='xlsxwriter', index=False)'''
 
