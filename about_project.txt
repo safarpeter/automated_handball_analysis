@@ -1,0 +1,22 @@
+This is one of my hobby projects. It tries to predict if the summarized goals of a handball match will over or under a certain value based on the earlier results.
+For example it makes a prediction if a the summarized goals will be over 55.5 or not. I was wondering if it is a good method to predict it or not. The method is 
+that first I collect the results of that competition which I would like to examine. In this case the first division of Norwegian Women's league.
+
+So, first I collected the results by web scraping. After I collected the betting options. I saved the webpages, because I suppose the betting site recognised me as a robot
+and did not allow me to collect anything from the site. I also saved the results page, because after a certain number of matches you can only see all results after clicking
+on 'more results' and I haven't already succeeded to avoid this problem by scraping, but it is in progress. :) 
+
+After collecting the needed data, I did the analysis. I examined how percentage of the matches were above that certain value when the home team played at home and the away
+team played at away. If this percentage is high enough, we can expect that the summarized goals will be over the threshold or if it is low enough, the summarized goals will
+be probably under the threshold.
+
+I made another analysis, there I examined in which half will be more goals. The method is similar to the over/under analysis. It is also based on the frequencies of the
+needed events.
+
+I did everything in Python. I used beautifulsoup for web scraping. I used pandas for the analyzation and data handling. 
+
+I would rather consider this project as an experiment than a proved 100% working method. I think it surely needs some little changes to make it more efficient, but the basic
+idea I think is good and has a potential to become a good method by doing some little changes.
+
+This project uses a template, which is imported in the "Norwegian file" and the functions of the template are called like it would be an inbuilt function and we just need
+to call the right function with the right parameters.
